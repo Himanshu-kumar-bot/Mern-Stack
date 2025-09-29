@@ -1,0 +1,37 @@
+#container{
+    background-color: wheat;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    justify-content:center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 5px;
+}
+/* 
+justify-content main axis ke around work karta hai
+main axis decide kaun karega -> flex-direction
+
+align-item--> cross axis
+ */
+.box{
+    width: 100px;
+    height:100px;
+
+    /* margin: 5px; */
+}
+.first{
+    background-color: red;
+    /* flex-grow: 1; */
+}
+.second{
+    background-color: aquamarine;
+    /* align-self: last baseline; */
+}
+.third{
+    background-color: blue;
+    /* flex-shrink: 4; */
+}
+.fourth{
+    background-color: blueviolet;
+}
