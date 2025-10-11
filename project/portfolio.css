@@ -301,4 +301,118 @@ profile section
    margin-right: 5px;
 
 }
+/* ===== Responsive CSS ===== */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .main-container {
+        grid-template-columns: 250px 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .sideBar {
+        padding: 20px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr 1fr; /* keep 2 columns on tablets */
+    }
+
+    .grid-container {
+        gap: 20px;
+    }
+}
+
+/* For small tablets & large phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr; /* sidebar stacks on top */
+        padding: 15px;
+    }
+
+    .sideBar {
+        height: auto;
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr; /* single column */
+        gap: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile h2 {
+        font-size: 1.2rem;
+    }
+
+    .profile p {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
+
+    .grid-item img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .grid-item h3 {
+        font-size: 0.9rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sideBar {
+        padding: 15px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    #about .content, .card p {
+        font-size: 0.85rem;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+
+    .card span {
+        font-size: 0.65rem;
+        padding: 3px 6px;
+    }
+}
+
  
